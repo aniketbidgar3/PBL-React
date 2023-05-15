@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="index_body" >
+   
+    <div class="index">
+        <div class="left_index">
+            <div class="translate">
+                <img src="../assets/images/my photos/krishna.jpg" alt="Index image"/>
+            </div>  
+        </div>
+        <div class="right_index">
+            <div class="translate">
+                <h1>Welcome to Bookshelf</h1>
+            
+                <p>Sign in to Bookshelf or <a  href="form.html">Create an Account</a> </p>
+                <p>Email or Username</p>
+                <input type="email">
+                <p>Password</p>
+                <div class="passwordBox">
+                    <span class="passwordInput">
+                        <input type="password"  id="id_password" >
+                    </span>
+                    <span class="eye">
+                        <!-- <ion-icon onclick="myFunction()" name="eye-off-outline"></ion-icon> -->
+                        <i class="far fa-eye" id="togglePassword" ></i>
+                    </span>
+                   
+                </div>
+                
+    
+                <br><br>
+                <a href="homepage.html"><button> <b>Sign in</b></button><br></a>
+              
+    
+    
+                <!-- ----------------or---------------- -->
+            <div>
+                <span style="width: 30% ;display: inline-block;"><hr></span>
+                <span style=" width: 3%; text-align: center;display: inline-block; "><sup> <b>or</b> </sup></span>
+                <span  style="width: 30% ;display: inline-block;"><hr></span>
+            </div>
+    
+                <p>Sign in using </p>
+            <div class="logos">
+                <!-- <a href="https://www.linkedin.com/in/aniket-bidgar-335381250?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEZdj9Z7TQkuJI6c4Bmeuvw%3D%3D"></a> -->
+                <img src="../assets/images/logo/linked in.png" alt="Linked in"/>
+                <img src="../assets/images/logo/google.png" alt="Google">
+                <img src="../assets/images/logo/facebook.png" alt="facebook"/>
+                <img src="../assets/images/logo/github.png" alt="github"/>
+            </div>
+            </div>
+       
+            </div>
+        </div>
+        
+   
+<!-- password visibility -->
+<script>
+        const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#id_password');
+
+    togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+    });
+</script>
+    
+
+<!-- script forr icons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
