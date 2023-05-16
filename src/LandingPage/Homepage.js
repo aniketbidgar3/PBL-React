@@ -3,29 +3,28 @@ import cornImg from "../assets/images/book1.jpg";
 import treeImg from "../assets/images/book2.jpeg";
 import wheatImg from "../assets/images/book3.jpg";
 import BookList from './BookList';
-import selectBooks from './selectBooks';
 
 function Homepage() {
   return (
     <div className='position-relative'>
       <Carousel style={{backgroundColor:'#999'}}>
         <Carousel.Item>
-          <img style={{width:'80%' ,height: '50vh' ,opacity:'0.6'}}
+         <a href="/"><img style={{width:'80%' ,height: '50vh' ,opacity:'0.6'}}
             className="d-block w-55 mx-auto my-5"
             src={cornImg}
             alt="First slide"
-          />
+          /></a> 
           <Carousel.Caption>
             <h3>Buy Books From Here</h3>
-            <p>Books can be second hand bu knowledge can't</p>
+            <p>Books can be second hand but knowledge can't</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img style={{width:'80%' ,height: '50vh',opacity:'0.8'}}
+        <a href="/uploadBook"><img style={{width:'80%' ,height: '50vh',opacity:'0.8'}}
             className="d-block  w-55 mx-auto my-5"
             src={treeImg}
             alt="Second slide"
-          />
+          /></a>
         
           <Carousel.Caption>
             <h3>Sell Books Here</h3>
@@ -33,11 +32,11 @@ function Homepage() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img style={{width:'80%' ,height: '50vh' ,opacity:'0.8'}}
+        <a href="/donateBook"><img style={{width:'80%' ,height: '50vh' ,opacity:'0.8'}}
             className="d-block w-55 mx-auto my-5"
             src={wheatImg}
             alt="Third slide"
-          />
+          /></a>
 
           <Carousel.Caption>
             <h3>Donate Books Here</h3>

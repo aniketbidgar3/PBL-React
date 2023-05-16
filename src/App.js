@@ -5,11 +5,12 @@ import { Routes,Route } from 'react-router-dom';
 import Contact from "./LandingPage/Contact";
 import Homepage from "./LandingPage/Homepage";
 import Setting from "./LandingPage/setting";
-import Inbox from "./LandingPage/inbox";
 import SignIn from "./LandingPage/sign_in";
 import ContactList from "./LandingPage/ContactList";
+import UploadBook from "./LandingPage/uploadBook";
 // export function App(props){
 function App() {
+  
   return (
     
     <div className=" App">
@@ -26,6 +27,7 @@ function App() {
           
           <Route  path="/sign_in" element={<SignIn/>} />
           <Route  path="/ContactList" element={<ContactList/>} />
+          <Route  path="/uploadBook" element={<UploadBook/>} />
           
         </Routes>
       </div>

@@ -47,13 +47,13 @@ function ContactCard({contactData}) {
     //       <MDBBtn href='#'>{contactData.button}</MDBBtn>
     //     </MDBCardBody>
     //   </MDBCard>
-    <div class="card text-center col-md-2 m-3">
+    <div className="card text-center col-md-2 m-3">
   
-  <div class="card-body" >
-    <h5 class="card-title">{contactData.Name}</h5>
-    <p class="card-text">{contactData.Location}</p>
+  <div className="card-body" >
+    <h5 className="card-title">{contactData.Name}</h5>
+    <p className="card-text">{contactData.Location}</p>
     <p>{contactData.price}</p>
-    <button class="btn btn-primary">{contactData.button}</button>
+    <button className="btn btn-primary">{contactData.button}</button>
   </div>
   
 </div>

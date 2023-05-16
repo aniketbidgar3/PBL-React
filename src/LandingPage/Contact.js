@@ -9,68 +9,68 @@ function Contact() {
             </div>
             <div className="col-sm bg-light m-4 " style={{ height: '80%'  }}>
 
-                <section class="m-4 col-sm ">
+                <section className="m-4 col-sm ">
 
-                    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                    <h2 className="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
 
-                    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+                    <p className="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
                         a matter of hours to help you.</p>
 
-                    <div class="row">
+                    <div className="row">
 
-                        <div class=" mb-md-0 mb-5">
+                        <div className=" mb-md-0 mb-5">
                             <form id="contact-form" name="contact-form" action="https://formsubmit.co/aniketbidgar3@gmail.com" method="POST">
 
 
-                                <div class="row mb-3">
+                                <div className="row mb-3">
 
 
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <label for="name" class="">Your name</label>
-                                            <input type="text" id="name" name="name" class="form-control" />
+                                    <div className="col-md-6">
+                                        <div className="md-form mb-0">
+                                            <label for="name" className="">Your name</label>
+                                            <input type="text" id="name" name="name" className="form-control" />
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6">
-                                        <div class="md-form mb-0">
-                                            <label for="email" class="">Your email</label>
-                                            <input type="email" name="email" class="form-control" />
+                                    <div className="col-md-6">
+                                        <div className="md-form mb-0">
+                                            <label for="email" className="">Your email</label>
+                                            <input type="email" name="email" className="form-control" />
                                         </div>
                                     </div>
 
 
                                 </div>
 
-                                <div class="row  mb-3">
-                                    <div class="col-md-12">
-                                        <div class="md-form mb-0">
-                                            <label for="subject" class="">Subject</label>
-                                            <input type="text" id="subject" name="subject" class="form-control" />
+                                <div className="row  mb-3">
+                                    <div className="col-md-12">
+                                        <div className="md-form mb-0">
+                                            <label for="subject" className="">Subject</label>
+                                            <input type="text" id="subject" name="subject" className="form-control" />
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="row  mb-3">
+                                <div className="row  mb-3">
 
-                                    <div class="col-md-12">
+                                    <div className="col-md-12">
 
-                                        <div class="md-form">
+                                        <div className="md-form">
                                             <label for="message">Your message</label>
-                                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                            <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea"></textarea>
                                         </div>
 
                                     </div>
                                 </div>
 
-                                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                                <button type="submit" className="btn btn-lg btn-dark btn-block">Submit Form</button>
 
                             </form>
 
-                            {/* <div class="text-center text-md-left">
-                                <a href="#action1" class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                            {/* <div className="text-center text-md-left">
+                                <a href="#action1" className="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
                             </div> */}
-                            <div class="status"></div>
+                            <div className="status"></div>
                         </div>
 
 
