@@ -1,53 +1,101 @@
 import Carousel from 'react-bootstrap/Carousel';
-import cornImg from "../assets/images/book1.jpg";
-import treeImg from "../assets/images/book2.jpeg";
+import Carousel1 from "../assets/images/corosel1.jpeg";
+import Carousel2 from "../assets/images/corosel2.jpeg";
+import Carousel3 from "../assets/images/corosel3.jpeg";
+import Carousel4 from "../assets/images/corosel4.jpeg";
+import Carousel5 from "../assets/images/corosel5.jpeg";
 import wheatImg from "../assets/images/book3.jpg";
-import BookList from './BookList';
+
+// import BookList from './BookList';
+import Setting from './setting';
 
 function Homepage() {
   return (
+    <div>
     <div className='position-relative'>
-      <Carousel style={{backgroundColor:'#999'}}>
-        <Carousel.Item>
-         <a href="/"><img style={{width:'80%' ,height: '50vh' ,opacity:'0.6'}}
-            className="d-block w-55 mx-auto my-5"
-            src={cornImg}
-            alt="First slide"
-          /></a> 
-          <Carousel.Caption>
-            <h3>Buy Books From Here</h3>
-            <p>Books can be second hand but knowledge can't</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <a href="/uploadBook"><img style={{width:'80%' ,height: '50vh',opacity:'0.8'}}
-            className="d-block  w-55 mx-auto my-5"
-            src={treeImg}
-            alt="Second slide"
-          /></a>
-        
-          <Carousel.Caption>
-            <h3>Sell Books Here</h3>
-            <p>You can Sell Your Books Here</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <a href="/donateBook"><img style={{width:'80%' ,height: '50vh' ,opacity:'0.8'}}
-            className="d-block w-55 mx-auto my-5"
-            src={wheatImg}
-            alt="Third slide"
-          /></a>
+    <Carousel variant="dark">
+  <Carousel.Item>
+    <img  style={{ height: '60vh' }}
+      className="d-block w-100 carousel-image"
+      src={wheatImg}
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h5>First slide label</h5>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img  style={{ width: '80%', height: '60vh' }}
+      className="d-block w-100 carousel-image"
+      src={Carousel1}
+      alt="Second slide"
+    />
+    <Carousel.Caption>
+      <h5>Second slide label</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img  style={{ width: '80%', height: '60vh' }}
+      className="d-block w-100 carousel-image"
+      src={Carousel2}
+      alt="Third slide"
+    />
+    <Carousel.Caption>
+      <h5>Third slide label</h5>
+      <p>
+        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+      </p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img  style={{ width: '80%', height: '60vh' }}
+      className="d-block w-100 carousel-image"
+      src={Carousel3}
+      alt="Fourth slide"
+    />
+    <Carousel.Caption>
+      <h5>Fourth slide label</h5>
+      <p>
+        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+      </p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  
+  <Carousel.Item>
+    <img  style={{ width: '80%', height: '60vh' }}
+      className="d-block w-100 carousel-image"
+      src={Carousel4}
+      alt="Fourth slide"
+    />
+    <Carousel.Caption>
+      <h5>Fourth slide label</h5>
+      <p>
+        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+      </p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  
+  <Carousel.Item>
+    <img  style={{ width: '80%', height: '60vh' }}
+      className="d-block w-100 carousel-image"
+      src={Carousel5}
+      alt="Fourth slide"
+    />
+    <Carousel.Caption>
+      <h5>Fourth slide label</h5>
+      <p>
+        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+      </p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  
+</Carousel>
 
-          <Carousel.Caption>
-            <h3>Donate Books Here</h3>
-            <p>Your Books Can Change Lives of Many Students</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-      <h1 className='mt-2 mb-2 text-white'style={{backgroundColor:'#999'}}>Book List</h1>
-      <BookList/>
+      <Setting />
       
-      
+    </div>
     </div>
   );
 }
