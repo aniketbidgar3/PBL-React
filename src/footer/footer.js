@@ -19,10 +19,10 @@ function Footer() {
           <div className="col-md-4">
             <h5>Categories</h5>
             <ul className="list-unstyled">
-              <li><a href="#">Electronics</a></li>
-              <li><a href="#">Clothing</a></li>
-              <li><a href="#">Home &amp; Kitchen</a></li>
-              <li><a href="#">Books</a></li>
+              <li><a href="#">Second Hand Books</a></li>
+              <li><a href="#">Literature</a></li>
+              <li><a href="#">History &amp; Biography</a></li>
+              <li><a href="#">Competetive Exam Books</a></li>
             </ul>
           </div>
           <div className="col-md-4">
@@ -40,7 +40,7 @@ function Footer() {
           <p className="mb-0">&copy; {new Date().getFullYear()} Bookshelf2nd. All rights reserved.</p>
           <p className="mt-1">
             <FontAwesomeIcon icon={faCircle} className="me-1" />
-            Made with love by Bookshelf2nd Team
+            Made in India with love by Bookshelf2nd Team
           </p>
         </div>
       </div>

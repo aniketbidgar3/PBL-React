@@ -1,63 +1,67 @@
-// import Card from 'react-bootstrap/Card';
-// import { Button } from 'react-bootstrap';
 
-// function ContactCard({contactData}) {
 
-//   return (
-//     <div className='col-md-3 my-3 lh-sm '>
-      
-//       <Card>
-//         <Card.Header ><h5>{contactData.bookName}</h5></Card.Header>
-//         <Card.Body>
-//           <blockquote className="blockquote mb-0">
-//             <p>
-//             {v.bookCity}
-//             </p>
-//             <footer className='h6'>
-//              Publication : <cite title="Source Title" className='fs-sm'>{contactData.bookPubliser} </cite><br/>
-//              Original Price : <cite title="Source Title" className='' >&#x20B9;{contactData.bookPrice} </cite>
-//             </footer>
-//             <Button className=' mt-3 ' >{contactData.button}</Button>
-            
-//           </blockquote>
-//         </Card.Body>
-//       </Card>
-//     </div>
-//   );
-// }
+import React, { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
-// export default ContactCard;
+function ContactCard({ contactData ,index }) {
+  const [showModal, setShowModal] = useState(false);
 
-import React from 'react';
-// import {
-//   MDBCard,
-//   MDBCardBody,
-//   MDBCardTitle,
-//   MDBCardText,
-//   MDBBtn
-// } from 'mdb-react-ui-kit';
+  const [bookData, setbookData] = useState([]);
 
-function ContactCard({contactData}) {
+  const handlePlaceOrder = (email1,phone1) => {
+
+    const value = 
+      {
+        email:email1,
+        phone:phone1
+      };
+
+      bookData.splice(0,1,value)
+  console.log(bookData);
+
+
+
+    setShowModal(true);
+    // Perform any other actions related to placing the order here
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
-    
-    //   <MDBCard alignment='center' className='col-md-2 m-3'>
-    //     <MDBCardBody>
-    //       <MDBCardTitle className='h5'>{contactData.Name}</MDBCardTitle>
-    //         <MDBCardText>{contactData.Location}</MDBCardText>
-    //       <MDBBtn href='#'>{contactData.button}</MDBBtn>
-    //     </MDBCardBody>
-    //   </MDBCard>
-    <div className="card text-center col-md-2 m-3">
-  
-  <div className="card-body" >
-    <h5 className="card-title">{contactData.Name}</h5>
-    <p className="card-text">{contactData.Location}</p>
-    <p>{contactData.price}</p>
-    <button className="btn btn-primary">{contactData.button}</button>
-  </div>
-  
-</div>
+    <div className="card text-center col-md-2 m-3" key={index}>
 
+      <div className="card-body">
+        <h5 className="card-title">{contactData.Name}</h5>
+        <h6 className="card-text">{contactData.bookName}</h6>
+        <p className="card-text">{contactData.Location}</p>
+        <p>₹{contactData.price}</p>
+        <button className="btn btn-primary" onClick={(()=>handlePlaceOrder(contactData.email,contactData.phone))}>
+          Place Order
+        </button>
+      </div>
+    <div>
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Order Placed Successfully</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {
+          bookData.map((e)=> <div> you can confirm your order from this email <b>{e.email}</b> or this fone number <b>{e.phone}</b></div>)
+         
+         
+        }
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+      </div>
+    </div>
   );
 }
 

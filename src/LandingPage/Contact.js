@@ -4,10 +4,10 @@ function Contact() {
     return (
         <div className="row m-auto" style={{ height: '100%', backgroundColor: '#ddd' }}>
 
-            <div className="col-sm   mt-4 m-4"style={{ height: '80%' }}>
-                <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.9496972484685!2d73.86308457410004!3d18.531175168852396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0f555bf965d%3A0x4dbf1000c873a42d!2sAISSMS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1683641575679!5m2!1sen!2sin"  width="550vw" height="500vh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div className="col-sm   mt-4 m-4" style={{ height: '80%' }}>
+                <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.9496972484685!2d73.86308457410004!3d18.531175168852396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0f555bf965d%3A0x4dbf1000c873a42d!2sAISSMS%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1683641575679!5m2!1sen!2sin" width="550vw" height="500vh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div className="col-sm bg-light m-4 " style={{ height: '80%'  }}>
+            <div className="col-sm bg-light m-4 " style={{ height: '80%' }}>
 
                 <section className="m-4 col-sm ">
 
@@ -19,7 +19,7 @@ function Contact() {
                     <div className="row">
 
                         <div className=" mb-md-0 mb-5">
-                            <form id="contact-form" name="contact-form" action="https://formsubmit.co/aniketbidgar3@gmail.com" method="POST">
+                            <form action="https://formspree.io/f/mdovvpbj" method="POST">
 
 
                                 <div className="row mb-3">

@@ -11,6 +11,7 @@ import SignUp from './LandingPage/sign_up'
 import ContactList from './LandingPage/ContactList';
 import UploadBook from './LandingPage/uploadBook';
 import Footer from './footer/footer';
+import BookList from './LandingPage/BookList';
 
 function App() {
   const location = useLocation();
@@ -36,6 +37,10 @@ function App() {
 
   return (
     <div className="App">
+
+
+<h1 className='my-5'><span>BOOKSHELF</span></h1>
+
       <div className="row m-3" id="NavBar">
         <NavBar />
       </div>
@@ -43,7 +48,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/contactus" element={<Contact />} />
-          {/* <Route path="/setting" element={<Setting/>} /> */}
+          <Route path="/setting" element={<BookList/>} />
           <Route path="/sign_in" element={<SignIn />} />
           <Route path="/ContactList" element={<ContactList />} />
           <Route path="/uploadBook" element={<UploadBook />} />
