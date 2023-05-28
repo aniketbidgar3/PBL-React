@@ -3,7 +3,7 @@
 import books from "../assets/images/signup.jpeg"
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 
 // import SignUp from './sign_up1';
 // import VerticalNavbar from './VerticalNavbar';
@@ -37,9 +37,9 @@ function SignIn() {
       {/* <img src={books} style={{ height:'70vh', marginTop:'10vh' , border:'solid black' }} alt='book img '/> */}
 
       {/* <Form className=' col-md-6 mx-3' style={{paddingTop:'5vh',marginTop:'10vh',height:'70vh', backgroundColor:'white'}}> */}
-      <div className=' col-md-6 '>
+      <div className=' col-md-6  text-center' >
       
-      <h2>Sign Up</h2>
+      <h2 >Sign Up</h2>
       <Form onSubmit={handleSubmit} className="mx-5">
         <Form.Group controlId="name">
           <Form.Label>Name</Form.Label>
@@ -83,7 +83,7 @@ function SignIn() {
 
         
 
-        <div className="mt-3">
+        <div className="mt-3  ">
           <Button variant="primary" type="submit" href="/sign_in">
           Register
           </Button>

@@ -1,11 +1,12 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect ,useState } from 'react';
+
 import NavBar from './NavBar/NavBar';
 import './App.css';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Contact from './LandingPage/Contact';
 import Homepage from './LandingPage/Homepage';
-// import Setting from './LandingPage/setting';
+
 import SignIn from './LandingPage/sign_in';
 import SignUp from './LandingPage/sign_up'
 import ContactList from './LandingPage/ContactList';
@@ -14,6 +15,19 @@ import Footer from './footer/footer';
 import BookList from './LandingPage/BookList';
 
 function App() {
+  // const [backendData , setBackendData]=useState([{}])
+
+  // useEffect(()=>{
+
+  //   fetch("/api").then(
+  //     response=>response.json()
+  //   ).then(
+  //     data=>{
+  //       setBackendData(data)
+  //     }
+  //   )
+  // },[])
+  
   const location = useLocation();
 
   useEffect(() => {
@@ -40,6 +54,14 @@ function App() {
 
 
 <h1 className='my-5'><span>BOOKSHELF</span></h1>
+
+{/* {(typeof backendData.users==='undefined') ?(
+  <p>Loading....</p>
+):(
+  backendData.users.map((user,i)=>(
+    <p key={i}>{user}</p>
+  ))
+)} */}
 
       <div className="row m-3" id="NavBar">
         <NavBar />

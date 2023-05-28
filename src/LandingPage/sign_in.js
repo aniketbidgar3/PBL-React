@@ -41,7 +41,7 @@ function SignUp() {
       {/* <img src={books} style={{ height:'70vh', marginTop:'10vh' , border:'solid black' }} alt='book img '/> */}
 
       {/* <Form className=' col-md-6 mx-3' style={{paddingTop:'5vh',marginTop:'10vh',height:'70vh', backgroundColor:'white'}}> */}
-      <div className=' col-md-6 '>
+      <div className=' col-md-6  text-center'>
       
       <Form  >
       
