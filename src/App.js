@@ -1,5 +1,5 @@
 
-import React, { useEffect ,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import NavBar from './NavBar/NavBar';
 import './App.css';
@@ -15,19 +15,19 @@ import Footer from './footer/footer';
 import BookList from './LandingPage/BookList';
 
 function App() {
-  // const [backendData , setBackendData]=useState([{}])
+  const [backendData, setBackendData] = useState([{}])
 
-  // useEffect(()=>{
+  useEffect(() => {
 
-  //   fetch("/api").then(
-  //     response=>response.json()
-  //   ).then(
-  //     data=>{
-  //       setBackendData(data)
-  //     }
-  //   )
-  // },[])
-  
+    fetch("/api").then(
+      response => response.json()
+    ).then(
+      data => {
+        setBackendData(data)
+      }
+    )
+  }, [])
+
   const location = useLocation();
 
   useEffect(() => {
@@ -53,9 +53,9 @@ function App() {
     <div className="App">
 
 
-<h1 className='my-5'><span>BOOKSHELF</span></h1>
+      <h1 className='my-5'><span>BOOKSHELF</span></h1>
 
-{/* {(typeof backendData.users==='undefined') ?(
+      {/* {(typeof backendData.users==='undefined') ?(
   <p>Loading....</p>
 ):(
   backendData.users.map((user,i)=>(
@@ -68,17 +68,20 @@ function App() {
       </div>
       <div className="row m-4" id="MainWindow">
         <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/contactus" element={<Contact />} />
-          <Route path="/setting" element={<BookList/>} />
-          <Route path="/sign_in" element={<SignIn />} />
-          <Route path="/ContactList" element={<ContactList />} />
-          <Route path="/uploadBook" element={<UploadBook />} />
-          <Route  path="/sign_up"  element={<SignUp />}/>
+          <Route>
+            <Route path="/Homepage" element={<Homepage />} />
+            <Route path="/contactus" element={<Contact />} />
+            <Route path="/setting" element={<BookList />} />
+            <Route path="/" element={<SignIn />} />
+            <Route path="/ContactList" element={<ContactList />} />
+            <Route path="/uploadBook" element={<UploadBook />} />
+            <Route path="/sign_up" element={<SignUp />} />
+          </Route>
+
         </Routes>
       </div>
       <div className="row" id="Footer">
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

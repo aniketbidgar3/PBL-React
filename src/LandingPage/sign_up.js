@@ -13,6 +13,7 @@ function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [mobileNumber, setMobileNumber] = useState('');
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -24,6 +25,13 @@ function SignIn() {
     setEmail('');
     setPassword('');
   };
+
+  function signup(){
+ 
+    let item={name,email,password,mobileNumber}
+    console.warn(item)
+
+  }
 
   return (
 
@@ -84,7 +92,7 @@ function SignIn() {
         
 
         <div className="mt-3  ">
-          <Button variant="primary" type="submit" href="/sign_in">
+          <Button  onClick={signup}    variant="primary" type="submit"href="/">
           Register
           </Button>
         </div>

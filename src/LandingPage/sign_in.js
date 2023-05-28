@@ -59,13 +59,14 @@ function SignUp() {
       </Form.Group>
 
      
-      <Button variant="primary" type="submit" href="/" >
+      <Button variant="primary" type="submit" href="/Homepage" >
       Login
       </Button>
 
       <div className="row mt-4">
         
         <a className='col-sm' href="#sign up">Forgot password?</a>
+        <a className='col-sm' href="/sign_up">Create an Account</a>
       
     </div>
        

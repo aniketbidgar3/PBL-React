@@ -14,7 +14,7 @@ function NavBar() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '90px' }} navbarScroll>
-            <Nav.Link href="/" className='border border-light mx-2 rounded-2 text-white'>
+            <Nav.Link href="/Homepage" className='border border-light mx-2 rounded-2 text-white'>
               <FontAwesomeIcon icon={faHome} className='me-2' />
               Home
             </Nav.Link>
@@ -34,13 +34,10 @@ function NavBar() {
             </Nav.Link>
           </Nav>
           <Nav className="ml-auto">
-            <Nav.Link href="/sign_up" className="border border-light mx-2 rounded-2 text-white">
-              <FontAwesomeIcon icon={faUserPlus} className="me-2" />
-              Register
-            </Nav.Link>
-            <Nav.Link href="/sign_in" className="border border-light mx-2 rounded-2 text-white">
+           
+            <Nav.Link href="/"  className="border border-light mx-2 rounded-2 text-white">
               <FontAwesomeIcon icon={faSignInAlt} className="me-2" />
-              Login
+              Log Out
             </Nav.Link>
           </Nav>
           {/* {isLoggedIn ? (
