@@ -8,7 +8,7 @@ import { faHome,  faUserPlus, faEnvelope, faSignInAlt,  faInfoCircle,faBook } fr
 function NavBar() {
 
   return (
-    <Navbar expand="lg" bg="dark" variant="dark">
+    <Navbar expand="lg" bg="dark"  variant="dark">
       <Container fluid>
         {/* <Navbar.Brand href="#" className='border-right-light text-white'>BookShelf</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="navbarScroll" />
