@@ -4,13 +4,11 @@
   top: 0;
   z-index: 100;
 }
+
 h1 {
   text-align: center;
-  /* border-bottom: 1px solid black; */
-  /* line-height: 0.1em; */
   margin: 10px 0 20px;
 }
-
 
 h1 span {
   background: #fff;

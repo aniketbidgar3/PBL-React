@@ -1,6 +1,6 @@
 import React from "react";
 
-function UploadBook() {
+function About() {
   return (
     <div className="text-center">
       <h4>
@@ -19,4 +19,4 @@ function UploadBook() {
   );
 }
 
-export default UploadBook;
+export default About;
